@@ -39,6 +39,9 @@ public class Primes {
                 if (i % j == 0) {
                     counter++;
                 }
+                if(counter > 2) {
+                    break;
+                }
             }
             if (counter == 2) { // if was only 2 dividers - it is a prime
                 primes.add(i);
